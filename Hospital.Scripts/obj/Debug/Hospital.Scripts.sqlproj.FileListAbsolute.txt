@@ -1,0 +1,11 @@
+D:\DEV\ANGULAR\SolucionHospOSBEJ\Hospital.Scripts\bin\Debug\Hospital.Scripts.dacpac
+D:\DEV\ANGULAR\SolucionHospOSBEJ\Hospital.Scripts\bin\Debug\Hospital.Scripts.dll
+D:\DEV\ANGULAR\SolucionHospOSBEJ\Hospital.Scripts\bin\Debug\Hospital.Scripts.pdb
+D:\DEV\ANGULAR\SolucionHospOSBEJ\Hospital.Scripts\obj\Debug\Hospital.Scripts.dll
+D:\DEV\ANGULAR\SolucionHospOSBEJ\Hospital.Scripts\obj\Debug\Hospital.Scripts.pdb
+D:\DEV\BK_GEN\BK_PRUEBA_HOSPITAL\2\SolucionHospOSBEJ\Hospital.Scripts\bin\Debug\Hospital.Scripts.dacpac
+D:\DEV\BK_GEN\BK_PRUEBA_HOSPITAL\2\SolucionHospOSBEJ\Hospital.Scripts\bin\Debug\Hospital.Scripts.dll
+D:\DEV\BK_GEN\BK_PRUEBA_HOSPITAL\2\SolucionHospOSBEJ\Hospital.Scripts\bin\Debug\Hospital.Scripts.pdb
+D:\DEV\BK_GEN\BK_PRUEBA_HOSPITAL\2\SolucionHospOSBEJ\Hospital.Scripts\obj\Debug\Hospital.Scripts.sqlprojAssemblyReference.cache
+D:\DEV\BK_GEN\BK_PRUEBA_HOSPITAL\2\SolucionHospOSBEJ\Hospital.Scripts\obj\Debug\Hospital.Scripts.dll
+D:\DEV\BK_GEN\BK_PRUEBA_HOSPITAL\2\SolucionHospOSBEJ\Hospital.Scripts\obj\Debug\Hospital.Scripts.pdb

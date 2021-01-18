@@ -1,0 +1,109 @@
+/*a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+  color: white;
+}
+
+  a.navbar-brand:hover {
+    color: #87f1e4;
+  }
+
+.subMenuStyle {
+  white-space: normal;
+  padding: 4px;
+  color: white;
+}
+
+  .subMenuStyle:hover {
+    color: #87f1e4;
+  }
+
+.Text-White {
+  color: white;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+*/
+
+
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+  color: white;
+}
+
+  a.navbar-brand:hover {
+    color: #87f1e4;
+  }
+
+
+.logo {
+  padding: 0px 5px;
+  font-size: 20px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar {
+  /*background: #8bc34a;*/
+  background: #007c91;
+  color: rgba(0,0,0,.87);
+}
+
+.mat-raised-button {
+  background: #60ad5e;
+  color: rgba(255,255,255,.87);
+}
+
+.linkbtnMenuItem {
+  /*background-color: #99d066;*/
+  background-color: #00acc1;
+  background-repeat: no-repeat;
+  /*color: rgba(0,0,0,.87);*/
+  color: white;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  font-size: 0.9em;
+  font-family: Arial;
+  padding-left: 14px;
+}
+
+  .linkbtnMenuItem:hover {
+    background-color: #5ddef4;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-size: 0.9em;
+    font-family: Arial;
+    padding-left: 14px;
+  }
+
+::ng-deep.mat-menu-content {
+  background-color: #00acc1;
+}
+
+.fuenteMainToolbar {
+  color: white;
+}

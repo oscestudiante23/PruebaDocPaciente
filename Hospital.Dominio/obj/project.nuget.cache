@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "aXbe3Hdmz6KA1H8lkuUC3Bk1X5SVaeUTGqt7uIz9Hzhvc5NtawKymMAawSruxh0/wzJV4/bJ0yYurzrNMJiIHA==",
+  "success": true,
+  "projectFilePath": "D:\\DEV\\BK_GEN\\BK_PRUEBA_HOSPITAL\\2\\SolucionHospOSBEJ\\Hospital.Dominio\\Hospital.Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\OSC_MSI\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,87 @@
+.mat-card-content {
+  min-height: 300px;
+}
+
+.borderCampos {
+  border-top: 1px solid #f2f1f1;
+}
+
+  .borderCampos:hover {
+    border: 1px solid #1fa3ef;
+  }
+
+
+.borderCamposGrilla {
+  border-top: 3px double #bfb9b9;
+}
+
+.borderRowGrilla {
+  border: 1px solid #f2f1f1;
+  background-color: #ffffff;
+}
+
+.labelcampoNombre {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+  padding-left: 1px;
+}
+
+.labelcampoValor {
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 16px;
+  color: black;
+  padding-left: 7px;
+}
+
+
+.labelcampoValorTotal {
+  background-color: chocolate;
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 18px;
+  color: white;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.labelcampoNombreGrilla {
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 18px;
+  color: black;
+  padding-left: 1px;
+  padding-top: 10px;
+}
+
+.formatoCampoPagina {
+  text-align: center;
+}
+
+.mat-raised-button {
+  background: #007c91;
+  color: rgba(255,255,255,.87);
+}
+
+.borderRowGrilla {
+  border: 1px solid #f2f1f1;
+  background-color: #ffffff;
+}
+
+  .borderRowGrilla:hover {
+    border: 1px solid #808080;
+    background-color: #c5f2ea;
+  }
+
+
+.borderRowGrilla {
+  border: 1px solid #f2f1f1;
+  background-color: #ffffff;
+}
+
+  .borderRowGrilla:hover {
+    border: 1px solid #808080;
+    background-color: #c5f2ea;
+  }

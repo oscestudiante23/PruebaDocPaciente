@@ -1,0 +1,47 @@
+.mat-raised-button {
+  background: #007c91;
+  color: rgba(255,255,255,.87);
+}
+
+.inputPersonalizado {
+  text-transform: lowercase;
+}
+
+.borderCampos {
+  border-top: 3px double #bfb9b9;
+}
+
+.borderRowGrilla {
+  border: 1px solid #f2f1f1;
+  background-color: #ffffff;
+}
+
+  .borderRowGrilla:hover {
+    cursor: pointer;
+    border: 1px solid #808080;
+    background-color: #c5f2ea;
+  }
+
+.labelcampoValor {
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 16px;
+  color: black;
+  padding-left: 7px;
+}
+
+.labelcampoNombre {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+  padding-left: 1px;
+}
+
+.labelcampoNombreGrilla {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+  padding-left: 1px;
+}

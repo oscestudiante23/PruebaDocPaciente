@@ -1,0 +1,36 @@
+<header>
+  <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style="background-color: #007c91;color:white;">
+    <div class="container">
+      <a class="navbar-brand" [routerLink]="['/']">Portal Hospital</a>
+      <button class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              aria-label="Toggle navigation"
+              [attr.aria-expanded]="isExpanded"
+              (click)="toggle()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div style="width:700px;"></div>
+
+      <div fxLayout="row">
+        <div>
+          <a mat-button class="fuenteMainToolbar" [matMenuTriggerFor]="appMenuDoctor">Doctor</a>
+          <a mat-button class="fuenteMainToolbar" [matMenuTriggerFor]="appMenuPaciente">Paciente</a>
+        </div>
+      </div>
+
+      <mat-menu #appMenuDoctor>
+        <a class="linkbtnMenuItem" mat-menu-item routerLink="doctorcrear">Crear</a>
+        <a class="linkbtnMenuItem" mat-menu-item routerLink="doctores">Consultar</a>
+      </mat-menu>
+      <mat-menu #appMenuPaciente>
+        <a class="linkbtnMenuItem" mat-menu-item routerLink="pacientecrear">Crear</a>
+        <a class="linkbtnMenuItem" mat-menu-item routerLink="pacientes">Consultar</a>
+        <a class="linkbtnMenuItem" mat-menu-item routerLink="pacientemodificar">Modificar</a>
+        <a class="linkbtnMenuItem" mat-menu-item routerLink="pacienteeliminar">Eliminar</a>
+      </mat-menu>
+
+    </div>
+  </nav>
+</header>

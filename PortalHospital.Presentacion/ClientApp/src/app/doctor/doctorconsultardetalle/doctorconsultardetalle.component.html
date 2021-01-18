@@ -1,0 +1,140 @@
+<mat-tab-group>
+  <mat-tab label="Doctor">
+    <mat-card class="mat-elevation-z2">
+      <mat-card-title>Consulta detallada del Doctor</mat-card-title>
+      <mat-card-content>
+        <form class="col-12">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 borderCampos">
+                <div class="text-justify">
+                  <label class="labelcampoNombre">Codigo:</label>
+                  <label class="labelcampoValor">{{doctorResponse.id}}</label>
+                </div>
+                <div class="text-justify">
+                  <label class="labelcampoNombre">Tipo de Documento:</label>
+                  <label class="labelcampoValor">{{tipoDocumentoDoctorTexto}}</label>
+                </div>
+                <div class="text-justify">
+                  <label class="labelcampoNombre">Numero de Documento:</label>
+                  <label class="labelcampoValor">{{doctorResponse.numeroDocumento}}</label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 borderCampos">
+                <div class="text-justify">
+                  <label class="labelcampoNombre">Nombre:</label>
+                  <label class="labelcampoValor">{{doctorResponse.nombreCompleto}}</label>
+                </div>
+                <div class="text-justify">
+                  <label class="labelcampoNombre">Especialidad:</label>
+                  <label class="labelcampoValor">{{doctorResponse.especialidad }}</label>
+                </div>
+                <div class="text-justify">
+                  <label class="labelcampoNombre">Numero de Credencial:</label>
+                  <label class="labelcampoValor">{{doctorResponse.numeroCredencial }}</label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 borderCampos">
+                <div class="text-justify">
+                  <label class="labelcampoNombre">Nombre del Hospital:</label>
+                  <label class="labelcampoValor">{{doctorResponse.nombreHospital}}</label>
+                </div>
+                <div class="text-justify">
+
+                </div>
+                <div class="text-justify">
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+
+  </mat-tab>
+  <mat-tab label="Pacientes Asignados">
+
+    <mat-card class="mat-elevation-z2">
+      <mat-card-title>Pacientes Asignados</mat-card-title>
+      <mat-card-content>
+        <form class="col-12">
+          <div class="container-fluid">
+            <br />
+            <div class="row" style="background-color:#5bbec8;">
+              <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 borderCamposGrilla">
+                <div class="text-center">
+                  <label class="labelcampoNombreGrilla">Codigo</label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 borderCamposGrilla">
+                <div class="text-center">
+                  <label class="labelcampoNombreGrilla">Numero de Documento</label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 borderCamposGrilla">
+                <div class="text-center">
+                  <label class="labelcampoNombreGrilla">Nombre</label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 borderCamposGrilla">
+                <div class="text-center">
+                  <label class="labelcampoNombreGrilla">Numero Seguridad Social</label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 borderCamposGrilla">
+                <div class="text-center">
+                  <label class="labelcampoNombreGrilla">CodigoPostal</label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 borderCamposGrilla">
+                <div class="text-center">
+                  <label class="labelcampoNombreGrilla">Telefono</label>
+                </div>
+              </div>
+            </div>
+            <div class="row borderRowGrilla" *ngFor="let ob of lsPacienteResponse">
+              <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2">
+                <div class="text-center">
+                  <label class="labelcampoValor">{{ob.id}}</label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 ">
+                <div class="text-center">
+                  <label class="labelcampoValor">{{ob.numeroDocumento}}</label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 ">
+                <div class="text-center">
+                  <label class="labelcampoValor">{{ob.nombreCompleto}}</label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 ">
+                <div class="text-center">
+                  <label class="labelcampoValor">{{ob.numeroSeguridadSocial }}</label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 ">
+                <div class="text-center">
+                  <label class="labelcampoValor">{{ob.codigoPostal }}</label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 ">
+                <div class="text-center">
+                  <label class="labelcampoValor">{{ob.telefono }}</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+
+  </mat-tab>
+</mat-tab-group>
+
+
+<ngx-spinner bdColor="rgba(51, 51, 51, 0.8)" size="default" type="ball-spin-clockwise">
+</ngx-spinner>

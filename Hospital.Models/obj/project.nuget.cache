@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "nbjg+yLApdKwfIPr3l0J0NZgS7f5pAd6wgmZBgHBCVw2SEwSldRSvJihEcoF12k1uScAY5JvE6EOC3K1zxrCkw==",
+  "success": true,
+  "projectFilePath": "D:\\DEV\\BK_GEN\\BK_PRUEBA_HOSPITAL\\2\\SolucionHospOSBEJ\\Hospital.Models\\Hospital.Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

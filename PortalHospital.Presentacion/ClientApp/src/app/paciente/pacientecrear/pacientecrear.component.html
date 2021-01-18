@@ -1,0 +1,157 @@
+<mat-tab-group>
+  <mat-tab label="Doctor">
+    <mat-card class="mat-elevation-z2">
+      <mat-card-title>Crear Paciente</mat-card-title>
+      <mat-card-content>
+        <form class="col-12">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 borderCampos">
+                <mat-form-field>
+                  <mat-select placeholder="Tipo de Documento" [formControl]="tipoDocumentoIdControl">
+                    <mat-option *ngFor="let ob of lsTipoDocumento" [value]="ob.id">
+                      {{ob.nombre}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 borderCampos">
+                <mat-form-field>
+                  <input type="text" matInput placeholder="Numero de Documento" maxlength="20" [formControl]="numeroDocumentoControl" />
+                </mat-form-field>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 borderCampos">
+                <mat-form-field>
+                  <input type="text" matInput placeholder="Nombre" class="inputPersonalizado" maxlength="150" [formControl]="nombreCompletoControl" />
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 borderCampos">
+                <mat-form-field>
+                  <input type="text" matInput placeholder="Numero Seguridad Social" maxlength="50" [formControl]="numeroSeguridadSocialControl" />
+                </mat-form-field>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 borderCampos">
+                <mat-form-field>
+                  <input type="text" matInput placeholder="Codigo Postal" maxlength="20" [formControl]="codigoPostalControl" />
+                </mat-form-field>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 borderCampos">
+                <mat-form-field>
+                  <input type="text" matInput placeholder="Telefono" class="inputPersonalizado" maxlength="12" [formControl]="telefonoControl" />
+                </mat-form-field>
+              </div>
+            </div>
+
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+
+  </mat-tab>
+  <mat-tab label="Doctores Asignados">
+
+    <mat-card class="mat-elevation-z2">
+      <mat-card-title></mat-card-title>
+      <mat-card-content>
+        <form class="col-12">
+          <div class="container-fluid">
+            <h4>Doctores Sin Asignar</h4>
+            <div class="row" style="background-color:white;">
+              <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 borderCampos">
+                <mat-form-field>
+                  <mat-select placeholder="Pacientes" [formControl]="doctorIdControl">
+                    <mat-option *ngFor="let ob of lsDoctorListaDB" [value]="ob.id">
+                      {{ob.numeroDocumentoNombre}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <button type="button" class="mat-raised-button" (click)="AsignarDoctorClick()">Asignar</button>
+              </div>
+            </div>
+            <br />
+            <h4>Doctores Asignados</h4>
+            <br />
+            <div class="row" style="background-color:#5bbec8;">
+              <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 borderCamposGrilla">
+                <div class="text-center">
+                  <label class="labelcampoNombreGrilla">Codigo</label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 borderCamposGrilla">
+                <div class="text-center">
+                  <label class="labelcampoNombreGrilla">Numero de Documento</label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 borderCamposGrilla">
+                <div class="text-center">
+                  <label class="labelcampoNombreGrilla">Nombre</label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 borderCamposGrilla">
+                <div class="text-center">
+                  <label class="labelcampoNombreGrilla">Especialidad</label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 borderCamposGrilla">
+                <div class="text-center">
+                  <label class="labelcampoNombreGrilla">NombreHospital</label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 borderCamposGrilla">
+                <div class="text-center">
+                  <label class="labelcampoNombreGrilla"></label>
+                </div>
+              </div>
+            </div>
+            <div class="row borderRowGrilla" *ngFor="let ob of lsDoctorResponseAsignados">
+              <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2">
+                <div class="text-center">
+                  <label class="labelcampoValor">{{ob.id}}</label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 ">
+                <div class="text-center">
+                  <label class="labelcampoValor">{{ob.numeroDocumento}}</label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 ">
+                <div class="text-center">
+                  <label class="labelcampoValor">{{ob.nombreCompleto}}</label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 ">
+                <div class="text-center">
+                  <label class="labelcampoValor">{{ob.especialidad }}</label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 ">
+                <div class="text-center">
+                  <label class="labelcampoValor">{{ob.nombreHospital }}</label>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 ">
+                <div class="text-center">
+                  <button type="button" class="mat-raised-button" (click)="ExcluirDoctorClick(ob.id)">Excluir</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+
+  </mat-tab>
+</mat-tab-group>
+
+<div class="row justify-content-start">
+  <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+    <button type="button" class="mat-raised-button" (click)="GuardarClick()">Guardar</button>
+  </div>
+</div>
+
+<ngx-spinner bdColor="rgba(51, 51, 51, 0.8)" size="default" type="ball-spin-clockwise">
+</ngx-spinner>

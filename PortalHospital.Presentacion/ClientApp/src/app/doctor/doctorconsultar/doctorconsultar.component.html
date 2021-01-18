@@ -1,0 +1,76 @@
+<mat-card class="mat-elevation-z2">
+  <mat-card-title>Consulta de Doctores</mat-card-title>
+  <mat-card-content>
+    <form class="col-12">
+      <div class="container-fluid">
+        <div class="row" style="background-color:#5bbec8;">
+          <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 borderCampos">
+            <div class="text-center">
+              <label class="labelcampoNombreGrilla">Codigo</label>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 borderCampos">
+            <div class="text-center">
+              <label class="labelcampoNombreGrilla">Numero de Documento</label>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 borderCampos">
+            <div class="text-center">
+              <label class="labelcampoNombreGrilla">Nombre</label>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 borderCampos">
+            <div class="text-center">
+              <label class="labelcampoNombreGrilla">Especialidad</label>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 borderCampos">
+            <div class="text-center">
+              <label class="labelcampoNombreGrilla">Credencial</label>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 borderCampos">
+            <div class="text-center">
+              <label class="labelcampoNombreGrilla">Hospital</label>
+            </div>
+          </div>
+        </div>
+        <div class="row borderRowGrilla" *ngFor="let ob of lsDoctorResponse" (click)="DetalleDoctorClick(ob.id)">
+          <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2">
+            <div class="text-center">
+              <label class="labelcampoValor">{{ob.id}}</label>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 ">
+            <div class="text-center">
+              <label class="labelcampoValor">{{ob.numeroDocumento}}</label>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 ">
+            <div class="text-center">
+              <label class="labelcampoValor">{{ob.nombreCompleto}}</label>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 ">
+            <div class="text-center">
+              <label class="labelcampoValor">{{ob.especialidad }}</label>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 ">
+            <div class="text-center">
+              <label class="labelcampoValor">{{ob.numeroCredencial }}</label>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2 ">
+            <div class="text-center">
+              <label class="labelcampoValor">{{ob.nombreHospital }}</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>
+
+<ngx-spinner bdColor="rgba(51, 51, 51, 0.8)" size="default" type="ball-spin-clockwise">
+</ngx-spinner>
